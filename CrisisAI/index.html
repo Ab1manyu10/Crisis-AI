@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CrisisAI helps communities prepare for future disasters with risk insights and preparedness planning.">
+  <title>CrisisAI | Future Disaster Preparedness</title>
+  <script>
+    if (sessionStorage.getItem('crisisaiSignedIn') !== 'true') {
+      window.location.replace('login.html');
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="CrisisAI home">
+      <span class="brand-mark">C</span>
+      <span>Crisis<span class="brand-accent">AI</span><small>PREPARE TODAY. PROTECT TOMORROW.</small></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#insights">Risk Insights</a>
+      <a href="#preparedness">Preparedness</a>
+      <a href="#community">Community</a>
+    </nav>
+
+    <a class="header-button" href="#preparedness">Explore plans <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse-dot"></span> FUTURE-READY COMMUNITIES</div>
+        <h1>Prepare for what’s next.<br><span>Before it happens.</span></h1>
+        <p class="hero-copy">
+          CrisisAI turns historical disaster information and local data into practical preparedness insights,
+          helping communities plan ahead with greater confidence.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#insights">Explore risk insights <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="#preparedness">View preparedness plans</a>
+        </div>
+        <div class="hero-note">
+          <span class="note-icon">✦</span>
+          <span><strong>Preparedness starts with knowledge.</strong><br>Understand risks. Plan resources. Strengthen readiness.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Preparedness overview illustration">
+        <div class="visual-topline"><span>CRISISAI OVERVIEW</span><span class="live-label"><i></i> PLANNING MODE</span></div>
+        <div class="map-panel">
+          <div class="map-grid"></div>
+          <svg class="map-art" viewBox="0 0 480 330" role="img" aria-label="Abstract map showing example planning zones">
+            <path class="land" d="M63 42 L112 27 149 47 176 36 211 59 246 50 271 76 309 72 327 98 365 106 387 137 371 167 394 192 371 219 341 215 320 248 286 246 265 278 227 268 208 291 176 269 145 275 128 246 98 238 86 207 59 192 73 164 51 143 66 111 47 86Z"/>
+            <path class="map-line" d="M65 106 C126 126 141 84 195 108 S281 135 325 105 S364 133 382 151"/>
+            <path class="map-line" d="M90 204 C144 181 170 218 217 190 S295 176 355 205"/>
+            <path class="map-line" d="M149 48 C163 100 138 139 174 170 S194 232 176 269"/>
+            <path class="map-line" d="M271 76 C248 117 285 143 265 180 S273 229 286 246"/>
+            <path class="map-line" d="M98 238 L145 194 217 190 246 149 325 105"/>
+            <circle class="zone zone-a" cx="174" cy="145" r="36"/>
+            <circle class="zone zone-b" cx="295" cy="188" r="47"/>
+            <circle class="map-point" cx="174" cy="145" r="5"/>
+            <circle class="map-point" cx="295" cy="188" r="5"/>
+            <circle class="map-point" cx="235" cy="94" r="4"/>
+          </svg>
+          <div class="map-tag tag-one"><span></span> Zone A <b>Review</b></div>
+          <div class="map-tag tag-two"><span></span> Zone B <b>Plan</b></div>
+          <div class="map-caption">ILLUSTRATIVE PLANNING MAP</div>
+        </div>
+        <div class="visual-bottom">
+          <div><span class="mini-icon">⌁</span><span><small>ANALYSIS</small><strong>Historical patterns</strong></span></div>
+          <div><span class="mini-icon">◎</span><span><small>PLANNING</small><strong>Resource readiness</strong></span></div>
+        </div>
+        <div class="floating-card"><span class="floating-icon">✦</span><span><small>PREPAREDNESS FOCUS</small><strong>Plan ahead, together.</strong></span></div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="CrisisAI approach">
+      <div><span class="stat-number">01</span><span><strong>Learn from history</strong><small>Use past disaster information</small></span></div>
+      <div><span class="stat-number">02</span><span><strong>Understand local risk</strong><small>Identify areas needing attention</small></span></div>
+      <div><span class="stat-number">03</span><span><strong>Prepare resources</strong><small>Support informed planning</small></span></div>
+    </section>
+
+    <section class="section insights-section" id="insights">
+      <div class="section-heading">
+        <div><div class="eyebrow dark-eyebrow">INSIGHTS FOR PLANNING</div><h2>See the bigger picture.</h2></div>
+        <p>CrisisAI is designed to help users explore future preparedness needs—not manage an active emergency.</p>
+      </div>
+
+      <div class="insight-grid">
+        <article class="info-card">
+          <div class="card-icon blue-icon">⌖</div>
+          <span class="card-kicker">01 / RISK ANALYSIS</span>
+          <h3>Risk pattern insights</h3>
+          <p>Explore historical disaster patterns and geographic information to highlight areas that may need preparedness attention.</p>
+          <a href="#preparedness">How it helps <span>→</span></a>
+        </article>
+        <article class="info-card">
+          <div class="card-icon green-icon">▤</div>
+          <span class="card-kicker">02 / RESOURCE FORECASTING</span>
+          <h3>Plan resource needs</h3>
+          <p>Estimate supplies, equipment, and resource requirements to support more thoughtful preparation before a disaster.</p>
+          <a href="#preparedness">Explore planning <span>→</span></a>
+        </article>
+        <article class="info-card">
+          <div class="card-icon amber-icon">⌂</div>
+          <span class="card-kicker">03 / SHELTER READINESS</span>
+          <h3>Strengthen readiness</h3>
+          <p>Organize shelter preparedness considerations and scenario-based plans around local needs and available resources.</p>
+          <a href="#preparedness">View priorities <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="preparedness-band" id="preparedness">
+      <div class="band-content">
+        <div class="eyebrow"><span class="pulse-dot"></span> FROM INSIGHT TO ACTION</div>
+        <h2>Good preparation is<br>built <span>before the crisis.</span></h2>
+        <p>Bring risk insights, resource estimates, and preparedness tasks into one clear planning experience.</p>
+        <a class="button button-light" href="#community">Discover the approach <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="plan-list">
+        <div class="plan-item"><span class="plan-check">01</span><span><strong>Review risk insights</strong><small>Identify potential areas of concern</small></span><span class="plan-arrow">↗</span></div>
+        <div class="plan-item"><span class="plan-check">02</span><span><strong>Estimate resource needs</strong><small>Consider supplies and equipment</small></span><span class="plan-arrow">↗</span></div>
+        <div class="plan-item"><span class="plan-check">03</span><span><strong>Prepare local plans</strong><small>Consider shelters and scenarios</small></span><span class="plan-arrow">↗</span></div>
+      </div>
+    </section>
+
+    <section class="community-section section" id="community">
+      <div class="community-symbol">✳</div>
+      <div class="community-copy">
+        <div class="eyebrow dark-eyebrow">COMMUNITY MATTERS</div>
+        <h2>Preparedness works<br>better when everyone contributes.</h2>
+        <p>Citizens can stay informed, explore preparedness updates, use the CrisisAI chatbot concept, and share feedback about plans, shelters, and resource needs.</p>
+      </div>
+      <div class="community-points">
+        <div><span>✓</span> View preparedness updates</div>
+        <div><span>✓</span> Explore guidance with a chatbot</div>
+        <div><span>✓</span> Share community feedback</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">C</span><span>Crisis<span class="brand-accent">AI</span><small>PREPARE TODAY. PROTECT TOMORROW.</small></span></a>
+    <p>A future disaster preparedness assistant concept.</p>
+  </footer>
+</body>
+</html>

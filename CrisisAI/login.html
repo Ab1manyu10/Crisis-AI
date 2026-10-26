@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to your CrisisAI citizen preparedness account.">
+  <title>Citizen Sign In | CrisisAI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-page">
+  <header class="login-header">
+    <a class="brand" href="index.html" aria-label="CrisisAI home">
+      <span class="brand-mark">C</span>
+      <span>Crisis<span class="brand-accent">AI</span><small>PREPARE TODAY. PROTECT TOMORROW.</small></span>
+    </a>
+    <a class="home-link" href="index.html"><span aria-hidden="true">←</span> Back to homepage</a>
+  </header>
+
+  <main class="login-main">
+    <section class="login-intro" aria-labelledby="intro-title">
+      <div class="eyebrow"><span class="pulse-dot"></span> YOUR PREPAREDNESS, IN ONE PLACE</div>
+      <h1 id="intro-title">A little preparation<br>goes a <span>long way.</span></h1>
+      <p>Sign in to explore preparedness guidance and stay connected with the information that helps you plan ahead.</p>
+      <div class="intro-note">
+        <span class="note-icon" aria-hidden="true">✦</span>
+        <span><strong>Prepare Today. Protect Tomorrow.</strong><br>Small steps today can make a difference tomorrow.</span>
+      </div>
+    </section>
+
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="card-heading">
+        <span class="card-kicker">CITIZEN ACCESS</span>
+        <h2 id="login-title">Welcome back</h2>
+        <p>Sign in to your CrisisAI account.</p>
+      </div>
+
+      <form class="login-form" id="login-form">
+        <label for="email">Email address</label>
+        <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+        <div class="password-heading">
+          <label for="password">Password</label>
+          <a href="#forgot-password">Forgot password?</a>
+        </div>
+        <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+        <button class="sign-in-button" type="submit">Sign In <span aria-hidden="true">→</span></button>
+      </form>
+
+      <p class="create-account">New to CrisisAI? <a href="#create-account">Create an account</a></p>
+      <p class="prototype-note">Citizen sign-in prototype · Authentication is not enabled yet.</p>
+    </section>
+  </main>
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      sessionStorage.setItem('crisisaiSignedIn', 'true');
+      window.location.replace('index.html');
+    });
+  </script>
+</body>
+</html>
